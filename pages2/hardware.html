@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hardware</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css2/hardware.css">
+</head>
+<body>
+
+    <a href="../index.html" class="btn-volver">
+        <i class="fa-solid fa-arrow-left"></i> Volver al Menú
+    </a>
+    <section class="arriba">
+        <h1>Especificaciones de <span>Hardware</span></h1>
+        <p>Documentación técnica y de arquitectura de hardware de nivel ingeniería. Todo lo que necesitas saber sobre los componentes que ensamblamos, optimizamos y reparamos en Kelfix.</p>
+    </section>
+
+    <main class="contenedor">
+
+        <section class="info-block">
+            <h2><i class="fa-solid fa-microchip"></i> 1. Arquitectura de Procesadores (CPU)</h2>
+            <p>La Unidad Central de Procesamiento (CPU) dicta la velocidad de cálculo matemático y lógico del sistema. Analizamos en profundidad las plataformas dominantes de la industria:</p>
+            
+            <h3>Intel Core (12ª a 14ª Generación) - Arquitectura Híbrida x86</h3>
+            <p>Intel revolucionó el mercado móvil e industrial introduciendo su arquitectura de núcleos dispares gestionados por hardware mediante el <strong>Intel Thread Director</strong>, un microcontrolador embebido que se comunica con el sistema operativo para asignar tareas en tiempo real:</p>
+            <ul>
+                <li><strong>Performance-Cores (P-Cores):</strong> Basados en microarquitecturas de alto rendimiento (como Raptor Cove). Cuentan con Hyper-Threading (2 hilos por núcleo), frecuencias de reloj elevadas y están destinados a tareas de ejecución secuencial crítica como videojuegos de físicas complejas, emulación y compilación primaria.</li>
+                <li><strong>Efficient-Cores (E-Cores):</strong> Núcleos de un solo hilo optimizados para rendimiento por vatio. Se encargan de las tareas de fondo de Windows/Linux (antivirus, servicios de red, Discord, descargas) para evitar que interrumpan los ciclos de reloj de los P-Cores.</li>
+                <li><strong>Sufijos Críticos:</strong> Los procesadores <strong>HX</strong> (ej. i9-14900HX) utilizan el mismo chip físico que los procesadores de escritorio, con un TDP base de 55W escalable a más de 150W, ofreciendo un rendimiento multihilo masivo. Los sufijos <strong>H</strong> balancean consumo (45W) y potencia.</li>
+            </ul>
+
+            <h3>AMD Ryzen (Series 6000, 7000 y 8000) - Potencia Monolítica Eficiente</h3>
+            <p>A diferencia de Intel, AMD apuesta en muchas de sus líneas de laptops por núcleos homogéneos de alto rendimiento basados en la arquitectura <strong>Zen 4 (y Zen 4c en chips compactos)</strong> fabricados bajo procesos fotolitográficos ultra reducidos de TSMC (4nm y 5nm):</p>
+            <ul>
+                <li><strong>Eficiencia Térmica Extrema:</strong> Gracias a transistores más pequeños, un procesador Ryzen consume significativamente menos energía a máxima carga en comparación con su contraparte de Intel, lo que se traduce en menor generación de calor residual y mayor autonomía de batería.</li>
+                <li><strong>Ryzen AI (NPU integrada):</strong> Las series 7040 y 8040 incorporan la arquitectura XDNA, un acelerador de hardware exclusivo para Inteligencia Artificial (NPU) capaz de procesar hasta 16 TOPS directamente en el chip, liberando a la CPU y GPU de tareas de reconocimiento de voz, desenfoque de cámara por software y modelos de lenguaje locales.</li>
+            </ul>
+        </section>
+
+        <section class="info-block">
+            <h2><i class="fa-solid fa-bolt"></i> 2. Subsistema de Video y Gráficos (GPU)</h2>
+            <p>El procesamiento gráfico moderno ha dejado de ser exclusivo para videojuegos; hoy en día determina la velocidad de procesamiento matricial para renderizado cinematográfico, redes neuronales y cómputo científico.</p>
+            
+            <h3>NVIDIA GeForce RTX Serie 40 (Ada Lovelace)</h3>
+            <p>Es la arquitectura estándar para estaciones de trabajo visuales y entornos de simulación en Kelfix. Su ecosistema se compone de tres pilares tecnológicos avanzados:</p>
+            <ul>
+                <li><strong>Tensor Cores de 4ª Generación:</strong> Chips especializados en operaciones matemáticas matriciales de baja precisión (FP16/INT8), la base de la Inteligencia Artificial. Permiten la ejecución de **DLSS 3 y 3.5**, que incluye la reconstrucción de rayos y la generación de fotogramas completos clonados por IA para duplicar la fluidez visual.</li>
+                <li><strong>RT Cores de 3ª Generación:</strong> Aceleradores de hardware para el cálculo de intersecciones de rayos de luz (Bounding Volume Hierarchy). Permiten simular reflejos, refracciones y sombras físicamente exactas mediante trazado de rayos (Path Tracing) sin colapsar el procesador gráfico principal.</li>
+                <li><strong>El Factor TGP (Total Graphics Power):</strong> En Kelfix recalcamos que dos laptops con la misma tarjeta gráfica (ej. RTX 4060) pueden rendir de forma completamente diferente. Una laptop delgada configurada a un TGP de 60W rendirá hasta un 35% menos que una laptop robusta configurada a su límite nativo de 140W.</li>
+            </ul>
+
+            <div class="nota-tecnica">
+                <strong>🚨 El Interruptor MUX Switch (Advanced Optimus):</strong> Las notebooks comunes pasan los fotogramas de la tarjeta gráfica potente a través de la gráfica integrada del procesador antes de enviarlos a la pantalla, perdiendo entre un 10% y 15% de rendimiento por latencia. Un equipo con MUX Switch físico permite desconectar electrónicamente la gráfica integrada, conectando la GPU NVIDIA directamente al panel de la pantalla para liberar los FPS máximos.
+            </div>
+        </section>
+
+        <section class="info-block">
+            <h2><i class="fa-solid fa-memory"></i> 3. Latencia y Ancho de Banda de Memorias (RAM)</h2>
+            <p>La memoria RAM determina la cantidad de datos que el procesador puede mantener listos para su uso inmediato. Analizamos las diferencias estructurales de los estándares actuales:</p>
+            
+            <h3>DDR5 vs DDR4 - El Salto Generacional</h3>
+            <p>La memoria DDR5 no es simplemente una actualización de velocidad respecto a DDR4; cambia la forma en que se transmite la información a nivel de placa base:</p>
+            <ul>
+                <li><strong>Frecuencias y Ancho de Banda:</strong> Mientras que DDR4 se estancó comercialmente en los 3200 MT/s, DDR5 opera nativamente en rangos que van desde los 4800 MT/s hasta los 5600 MT/s en laptops, duplicando el ancho de banda teórico de transferencia de datos.</li>
+                <li><strong>Dos Canales en un solo módulo (Sub-canales de 32 bits):</strong> Un solo módulo de memoria DDR4 funciona en Single Channel (bus de 64 bits). DDR5 divide internamente cada módulo en dos sub-canales independientes de 32 bits (+8 bits de ECC), optimizando el acceso simultáneo del procesador.</li>
+                <li><strong>LPDDR5 / LPDDR5X (Memoria Soldada):</strong> Común en Ultrabooks de trabajo ultra delgadas. Opera a frecuencias masivas (hasta 7500MHz) y consume menos energía, pero sus chips están soldados directamente a la placa madre, impidiendo futuras actualizaciones.</li>
+            </ul>
+        </section>
+
+        <section class="info-block">
+            <h2><i class="fa-solid fa-hard-drive"></i> 4. Tecnologías de Almacenamiento Masivo (NVMe)</h2>
+            <p>La velocidad de un equipo ya no se mide solo en gigahercios de CPU, sino en la velocidad de entrada y salida (I/O) de sus archivos del sistema.</p>
+            
+            <h3>Unidades de Estado Sólido M.2 NVMe PCIe Gen 4.0 y Gen 5.0</h3>
+            <p>Los SSD modernos se conectan directamente a las líneas del bus PCI Express de la placa madre, eliminando el antiguo cuello de botella del protocolo SATA:</p>
+            <ul>
+                <li><strong>PCIe Gen 4.0:</strong> Estándar consolidado en equipos de alto rendimiento. Ofrece velocidades de lectura secuencial de hasta <strong>7500 MB/s</strong> y escrituras de 6500 MB/s. Capaz de cargar archivos de proyectos pesados de AutoCAD o Premiere de forma casi instantánea.</li>
+                <li><strong>PCIe Gen 5.0:</strong> La nueva frontera del hardware. Dobla el ancho de banda de la generación anterior, alcanzando velocidades teóricas destructivas de hasta <strong>14,000 MB/s</strong>. Requieren disipadores térmicos dedicados de cobre o aluminio con almohadillas térmicas de alta conductividad para evitar que el chip reduzca su velocidad por exceso de calor (*Thermal Throttling*).</li>
+                <li><strong>IOPS (Operaciones de Entrada/Salida por Segundo):</strong> Más allá de la velocidad secuencial, las unidades premium destacan por superar el millón de IOPS en lectura aleatoria, acelerando la búsqueda y apertura de miles de archivos pequeños de código de programación o bases de datos complejas.</li>
+            </ul>
+        </section>
+
+        <section class="info-block">
+            <h2><i class="fa-solid fa-desktop"></i> 5. Tecnología de Pantallas y Matrices Visuales</h2>
+            <p>La pantalla es la interfaz directa entre el hardware interno y tus ojos. No todas las pantallas están hechas para el mismo propósito; se configuran según el perfil de uso:</p>
+            
+            <h3>Tipos de Paneles Electrónicos</h3>
+            <ul>
+                <li><strong>Paneles IPS (In-Plane Switching):</strong> Ofrecen los mejores ángulos de visión (178 grados) y una precisión de color sumamente estable. Son la elección obligatoria para diseñadores gráficos, editores de video y programadores que pasan largas jornadas frente al monitor.</li>
+                <li><strong>Paneles OLED / AMOLED:</strong> Cada píxel es un diodo emisor de luz independiente. Al apagar los píxeles por completo, ofrecen una relación de contraste infinita y "negros puros". Tienen tiempos de respuesta instantáneos (0.1ms), perfectos para el consumo multimedia premium y gaming inmersivo.</li>
+            </ul>
+
+            <h3>Tasa de Refresco (Hercios) y Cobertura de Color</h3>
+            <p>Para entornos de trabajo normales, un panel de **60Hz o 90Hz** es suficiente para dar fluidez. Para entornos Gaming Competitivos, los paneles Kelfix escalan hasta los **144Hz, 165Hz o 240Hz**, actualizando la imagen hasta 240 veces por segundo para reducir el desenfoque de movimiento.</p>
+            <p>Adicionalmente, para profesionales de la imagen medimos la fidelidad mediante espacios de color internacionales estandarizados: <strong>100% sRGB</strong> para diseño web, <strong>DCI-P3</strong> para corrección de color cinematográfica y certificaciones <strong>Pantone Validated</strong>.</p>
+        </section>
+
+        <section class="info-block">
+            <h2><i class="fa-solid fa-wind"></i> 6. Disipación Térmica e Inyección de Energía</h2>
+            <p>Un hardware potente es inútil si la arquitectura física no es capaz de refrigerar los chips o alimentar la demanda eléctrica de los transistores.</p>
+            
+            <h3>Sistemas de Enfriamiento de Estado Sólido y Líquido</h3>
+            <p>Las computadoras portátiles modernas concentran más de 200W de calor en áreas milimétricas. Para mitigar esto, implementamos técnicas de ingeniería térmica avanzada:</p>
+            <ul>
+                <li><strong>Metal Líquido (Liquid Metal):</strong> En lugar de la pasta térmica tradicional de silicona, los procesadores de gama entusiasta emplean aleaciones de Galio e Indio. El metal líquido tiene una conductividad térmica hasta 10 veces mayor, reduciendo las temperaturas base del procesador en hasta 15°C de golpe.</li>
+                <li><strong>Cámaras de Vapor (Vapor Chambers):</strong> Placas de cobre selladas herméticamente que contienen un líquido refrigerante de fase cambiante en su interior. Al calentarse, el líquido se evapora, viaja a las zonas frías del disipador, se condensa y regresa al chip. Distribuyen el calor de manera uniforme, superando por mucho a los tradicionales tubos de calor (*Heatpipes*).</li>
+            </ul>
+
+            <h3>Fuentes de Alimentación y Regulación de Voltaje (VRMs)</h3>
+            <p>Los módulos de regulación de voltaje (VRM) limpian y transforman los voltios que entran desde el cargador de la pared en los voltajes ultra precisos y estables (generalmente alrededor de 1V a 1.3V) que requiere la CPU y GPU. Un cargador original Kelfix con certificación de alta eficiencia garantiza que no existan micro-cortes de energía ni fluctuaciones que puedan dañar los componentes internos bajo cargas pesadas prolongadas.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Kelfix</p>
+    </footer>
+
+</body>
+</html>

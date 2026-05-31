@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuello de Botella</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css2/articulo.css">
+</head>
+<body>
+
+    <a href="notas.html" class="btn-volver">
+        <i class="fa-solid fa-arrow-left"></i> Volver a Notas
+    </a>
+
+    <article class="articulo-container">
+        <div class="meta-info">Arquitectura de Hardware</div>
+        <h1>Cuello de botella: El enemigo oculto del rendimiento</h1>
+        
+        <hr>
+
+        <div class="contenido-html">
+            <p>Es el error clásico: gastar todo el presupuesto en una tarjeta gráfica brutal de última generación pensando que solucionará todos los tirones en los juegos o la lentitud al renderizar. Sin embargo, el hardware trabaja en equipo, y el rendimiento final siempre estará limitado por el componente más lento.</p>
+
+            <h2>¿Qué es exactamente el Bottleneck?</h2>
+            <p>Imagina una autopista de 4 carriles (tu GPU procesando gráficos a toda velocidad) que de golpe se reduce a 1 solo carril (tu procesador viejo que no puede enviarle las instrucciones a tiempo). La placa de video se queda esperando órdenes con un porcentaje de uso del 40%, provocando los temidos bajones bruscos de FPS (*stuttering*).</p>
+
+            <div class="caja-destacada">
+                <h4>⚠️ El Cuello de Botella que pocos ven: Single Channel RAM</h4>
+                <p>Tener un excelente procesador y una gran gráfica pero usar un solo módulo de memoria RAM (Single Channel) frena el ancho de banda del sistema a la mitad. Instalar dos módulos idénticos elimina este límite de inmediato.</p>
+            </div>
+
+            <h2>Cómo identificarlo tú mismo</h2>
+            <ul>
+                <li><strong>Cuello de CPU:</strong> Si jugando ves que tu procesador está al 95% de uso y la tarjeta gráfica al 60%, necesitas limitar los FPS o actualizar tu procesador.</li>
+                <li><strong>Cuello de Almacenamiento:</strong> Un disco mecánico antiguo (HDD) hará que los juegos modernos tarden minutos en cargar texturas, generando congelamientos de pantalla por falta de velocidad de transferencia.</li>
+            </ul>
+        </div>
+
+        <footer>
+            <p>© 2026 Kelfix</p>
+        </footer>
+    </article>
+
+</body>
+</html>

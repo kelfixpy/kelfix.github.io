@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componentes - KELFIX</title>
+    <link rel="stylesheet" href="../css/pcs.css">
+    <link rel="stylesheet" href="../css/theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="page-inner">
+    <header>
+       <a href="../index.html" class="header-logo">KEL<span style="color:white;">FIX</span></a>
+    <h2>COMPONENTES</h2>
+    <button class="btn" onclick="abrirmenu()"><i class="fas fa-bars"></i></button>
+
+    <div id="menuLateral" class="sidebar-lateral">
+        <a href="javascript:void(0)" class="btn-cerrar" onclick="cerrarMenu()">&times;</a>
+        <div class="menu-titulo">Menú</div>
+        <ul class="menu-enlaces">
+            <li><a href="../pages2/empresa.html"><i class="fas fa-info-circle"></i> Sobre la empresa</a></li>
+            <li><a href="../pages2/compatibilidad.html"><i class="fas fa-layer-group"></i> Guia de Compatibilidad</a></li>
+            <li><a href="../pages2/notas.html"><i class="fas fa-newspaper"></i> Notas</a></li>
+            <li><a href="../pages2/hardware.html"><i class="fas fa-book"></i> Hardware</a></li>
+            <li><a href="../pages2/garantia.html"><i class="fas fa-shield-alt"></i> Garantias</a></li>
+            <li><a href="../pages2/desarrollador.html"><i class="fas fa-box"></i> Desarrolladores</a></li>
+        </ul>
+    </div>
+    <div id="fondoOscuro" class="menu-overlay" onclick="cerrarMenu()"></div>
+    </header>
+
+    <main>
+        <div class="grid">
+
+            <!-- CARD 1 -->
+            <div class="card">
+                <img src="https://m.media-amazon.com/images/I/61My4F2-XUL._AC_SL1500_.jpg" alt="Procesador Intel Core i9-13900K">
+                <div class="card-body">
+                    <h3>Procesador Intel Core i9-13900K</h3>
+                    <p>24 núcleos · 5.80 GHz Turbo Boost</p>
+                    <p>32 hilos · 36MB Cache inteligente</p>
+                    <p>Socket LGA1700 · Sin cooler incluido</p>
+                    <p class="precio">Gs. 3.700.000</p>
+                </div>
+                <button>Agregar al carrito</button>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="card">
+                <span class="badge">OFERTA</span>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1fU_h2F19s9spMTQpBCrOp-j-wm6QGlze_Q&s" alt="Procesador AMD Ryzen 7 5800X">
+                <div class="card-body">
+                    <h3>Procesador AMD Ryzen 7 5800X</h3>
+                    <p>8 núcleos · 4.7 GHz Boost</p>
+                    <p>16 hilos · 36MB Cache L3</p>
+                    <p>Socket AM4 · Sin cooler incluido</p>
+                    <p class="precio-old">Gs. 1.800.000</p>
+                    <p class="precio">Gs. 1.500.000</p>
+                </div>
+                <button>Agregar al carrito</button>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="card">
+                <img src="https://m.media-amazon.com/images/I/91Yev94o2HL._AC_SL1500_.jpg" alt="Tarjeta Gráfica ASUS GTX 1650">
+                <div class="card-body">
+                    <h3>Tarjeta Gráfica ASUS GTX 1650</h3>
+                    <p>4GB GDDR6 · Doble ventilador</p>
+                    <p>Arquitectura NVIDIA Turing</p>
+                    <p>Salida HDMI · DisplayPort · DVI</p>
+                    <p class="precio">Gs. 1.150.000</p>
+                </div>
+                <button>Agregar al carrito</button>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="card">
+                <span class="badge">NUEVO</span>
+                <img src="https://m.media-amazon.com/images/I/61r58FqSbtL._AC_SL1016_.jpg" alt="Tarjeta Gráfica RTX 4060 8GB">
+                <div class="card-body">
+                    <h3>Tarjeta Gráfica RTX 4060 8GB</h3>
+                    <p>8GB GDDR6 · Ada Lovelace</p>
+                    <p>DLSS 3 · Ray Tracing</p>
+                    <p>Ideal para 1080p y 1440p gaming</p>
+                    <p class="precio">Gs. 3.200.000</p>
+                </div>
+                <button>Agregar al carrito</button>
+            </div>
+
+            <!-- CARD 5 -->
+            <div class="card">
+                <img src="https://mercadodigital.com.py/_ipx/f_webp&q_85/https://cdn.mercadodigital.com.py/photos/56573-memoria-ram-corsair-vengeance-rgb-pro-16gb-2-x-8gb-ddr4-dram-3200mhz-c16-tuf-gaming-edition.jpg" alt="RAM Corsair Vengeance 16GB DDR4">
+                <div class="card-body">
+                    <h3>RAM Corsair Vengeance 16GB DDR4</h3>
+                    <p>2x8GB · 3200MHz</p>
+                    <p>Latencia CL16</p>
+                    <p>Compatible Intel y AMD</p>
+                    <p class="precio">Gs. 380.000</p>
+                </div>
+                <button>Agregar al carrito</button>
+            </div>
+
+            <!-- CARD 6 -->
+            <div class="card">
+                <span class="badge">-10%</span>
+                <img src="https://m.media-amazon.com/images/I/71Y-MK6-fsL.jpg" alt="RAM Kingston FURY 32GB DDR5">
+                <div class="card-body">
+                    <h3>RAM Kingston FURY 32GB DDR5</h3>
+                    <p>2x16GB · 5200MHz</p>
+                    <p>RGB integrado · XMP 3.0</p>
+                    <p>Para plataformas Intel 12/13va Gen</p>
+                    <p class="precio-old">Gs. 950.000</p>
+                    <p class="precio">Gs. 855.000</p>
+                </div>
+                <button>Agregar al carrito</button>
+            </div>
+
+            <!-- CARD 7 -->
+            <div class="card">
+                <img src="https://cdn.billowshop.com/719f062b-044d-3147-7274-612e34049e0a/img/Producto/b798e22f-5c49-fe27-1d6a-acd61c3870d3/nv2-1tb-3-66b0ee0e03ddb.jpg" alt="SSD Kingston NV2 1TB NVMe">
+                <div class="card-body">
+                    <h3>SSD Kingston NV2 1TB NVMe M.2</h3>
+                    <p>Velocidad lectura hasta 3500MB/s</p>
+                    <p>PCIe 4.0 · Formato M.2 2280</p>
+                    <p>Ideal para sistema operativo y juegos</p>
+                    <p class="precio">Gs. 420.000</p>
+                </div>
+                <button>Agregar al carrito</button>
+            </div>
+
+            <!-- CARD 8 -->
+            <div class="card">
+                <span class="badge">OFERTA</span>
+                <img src="https://gameone.ph/media/catalog/product/mpiowebpcache/d378a0f20f83637cdb1392af8dc032a2/s/a/samsung-evo-870-evo-sata-500-1.webp" alt="SSD Samsung 870 EVO 500GB">
+                <div class="card-body">
+                    <h3>SSD Samsung 870 EVO 500GB SATA</h3>
+                    <p>Velocidad lectura 560MB/s</p>
+                    <p>Formato 2.5" · SATA III</p>
+                    <p>5 años de garantía</p>
+                    <p class="precio-old">Gs. 280.000</p>
+                    <p class="precio">Gs. 230.000</p>
+                </div>
+                <button>Agregar al carrito</button>
+            </div>
+
+            <!-- CARD 9 -->
+            <div class="card">
+                <img src="https://assets.corsair.com/image/upload/c_pad,q_auto,h_1024,w_1024,f_auto/products/Liquid-Cooling/base-h55-h100-h150-rgb-config/Gallery/H100_RGB_01.webp" alt="Cooler Líquido Corsair H100i">
+                <div class="card-body">
+                    <h3>Cooler Líquido Corsair H100i 240mm</h3>
+                    <p>Radiador 240mm · 2 ventiladores RGB</p>
+                    <p>Compatible Intel LGA1700 / AMD AM5</p>
+                    <p>Control iCUE incluido</p>
+                    <p class="precio">Gs. 750.000</p>
+                </div>
+                <button>Agregar al carrito</button>
+            </div>
+
+            <!-- CARD 10 -->
+            <div class="card">
+                <span class="badge">-15%</span>
+                <img src=" https://www.compulandia.com.py/wp-content/uploads/2025/10/original_01-3141.jpg" alt="Fuente de Poder Corsair 650W">
+                <div class="card-body">
+                    <h3>Fuente Corsair CV650 650W 80+ Bronze</h3>
+                    <p>650W · Certificación 80+ Bronze</p>
+                    <p>Ventilador silencioso 120mm</p>
+                    <p>Protección OVP · OCP · SCP</p>
+                    <p class="precio-old">Gs. 420.000</p>
+                    <p class="precio">Gs. 357.000</p>
+                </div>
+                <button>Agregar al carrito</button>
+            </div>
+
+            <!-- CARD 11 -->
+            <div class="card">
+                <img src="https://dlcdnwebimgs.asus.com/gain/A5A5CF00-C00B-4E6F-9470-6CDB3B0BE5ED/w260/fwebp" alt="Placa Madre ASUS ROG Strix B550-F">
+                <div class="card-body">
+                    <h3>Placa Madre ASUS ROG Strix B550-F</h3>
+                    <p>Socket AM4 · Chipset B550</p>
+                    <p>PCIe 4.0 · 4 slots DDR4</p>
+                    <p>WiFi 6 · 2.5G LAN · RGB AURA</p>
+                    <p class="precio">Gs. 1.100.000</p>
+                </div>
+                <button>Agregar al carrito</button>
+            </div>
+
+            <!-- CARD 12 -->
+            <div class="card">
+                <span class="badge">NUEVO</span>
+                <img src="https://gorilagames.com/img/Public/1019-producto-gabinete-corsar-4000d-airflow-black-07-3194.jpg" alt="Gabinete Corsair 4000D Airflow">
+                <div class="card-body">
+                    <h3>Gabinete Corsair 4000D Airflow</h3>
+                    <p>Torre ATX · Panel lateral cristal templado</p>
+                    <p>3 ventiladores 120mm incluidos</p>
+                    <p>Excelente flujo de aire · USB-C frontal</p>
+                    <p class="precio">Gs. 680.000</p>
+                </div>
+                <button>Agregar al carrito</button>
+            </div>
+
+        </div>
+
+        <div class="volver-wrap">
+            <button onclick="window.location.href='../index.html'">← Volver al inicio</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 KELFIX Paraguay</p>
+    </footer>
+<div id="cart-modal" class="modal-overlay">
+    <div class="modal-card">
+        <div class="modal-icon">
+            <i class="fa-solid fa-circle-check"></i>
+        </div>
+        <h2>¡Agregado con éxito!</h2>
+        <p>El producto ha sido añadido correctamente a tu carrito de compras de Kelfix.</p>
+        <hr class="modal-divider">
+        <button id="close-modal-btn" class="btn-modal-close">Continuar Comprando</button>
+    </div>
+</div>
+    <!-- Botón flotante modo oscuro/claro -->
+    <button class="btn-theme" id="btn-theme">☀️ Modo Claro</button>
+    <script src="../js/theme.js"></script>
+    <script src="../js/modal.js"></script>
+    <script src="../js/script1.js"></script>
+</body>
+</html>

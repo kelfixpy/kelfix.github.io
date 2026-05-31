@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/theme.css">
+    
+</head>
+<body>
+    <button class="btn-theme" id="btn-theme">☀️ Modo Claro</button>
+    <header>
+        <a href="index.html" class="titulo">KEL<span>FIX</span></a>
+            <div class="cabecera1">
+                
+                <button class="btn" onclick="abrirmenu()" ><i class="fas fa-bars"></i></button>
+            </div>
+            <nav>
+                <a href="pages/pcs.html" style="color: white;">PCs </a>
+                <a href="pages/notebooks.html" style="color: white;">Notebooks</a>
+                <a href="pages/componentes.html" style="color: white;">Componentes</a>
+                <a href="pages/gaming.html" style="color: white;">Gaming Series</a>
+                <a href="pages/ensambles.html" style="color: white;">Ultimos Ensambles</a>
+            </nav>
+              
+            <div id="menuLateral" class="sidebar-lateral">
+            <a href="javascript:void(0)" class="btn-cerrar" onclick="cerrarMenu()">&times;</a>
+    
+            <div class="menu-titulo">Menú</div>
+            <ul class="menu-enlaces">
+                <li><a href="pages2/empresa.html"><i class="fas fa-info-circle"></i> Sobre la empresa</a></li>
+                <li><a href="pages2/compatibilidad.html"><i class="fas fa-layer-group"></i> Guia de Compatibilidad</a></li>
+                <li><a href="pages2/notas.html"><i class="fas fa-newspaper"></i> Notas</a></li>
+                <li><a href="pages2/hardware.html"><i class="fas fa-book"></i> Hardware</a></li>
+                 <li><a href="pages2/garantia.html"><i class="fas fa-shield-alt"></i> Garantias</a></li>
+                <li><a href="pages2/desarrollador.html"><i class="fas fa-box"></i> Desarrolladores</a></li>
+            </ul>
+            </div>
+
+            <div id="fondoOscuro" class="menu-overlay" onclick="cerrarMenu()"></div>
+    </header>
+    <main>
+        <div class="carrusel-contenido">
+        <div class="carrusel-track">
+
+            <div class="carrusel-slide" style="display: block;">
+                <img src="imagen/carrusel1.png">
+            </div>
+            <div class="carrusel-slide">
+                <img src="imagen/carrusel2.png">
+            </div>
+            <div class="carrusel-slide">
+                 <img src="imagen/carrusel71.png">
+            </div>
+             <div class="carrusel-slide">
+                 <img src="imagen/carrusel4.png">
+            </div>
+             <div class="carrusel-slide">
+                 <img src="imagen/carrusel10.jpg">
+            </div>
+              <div class="carrusel-slide">
+                 <img src="imagen/carrusel15.jpg">
+            </div>
+
+
+            </div>
+            <button class="prev" onclick="mover(-1)">&#10094</button>
+            <button class="next" onclick="mover(1)">&#10095</button>
+
+            <div class="carrusel-dots-contenido">
+                  <span class="dot" onclick="irSlide(0)"></span>
+                  <span class="dot" onclick="irSlide(1)"></span>
+                  <span class="dot" onclick="irSlide(2)"></span>
+                  <span class="dot" onclick="irSlide(3)"></span>
+                  <span class="dot" onclick="irSlide(4)"></span>
+                  <span class="dot" onclick="irSlide(5)"></span>
+            </div>
+        </div>
+
+        <div class="grid">
+           <div class="card">
+               <img src="imagen/pc1.jpg">
+               <h3>Combo Full Setup VIBOX Gaming </h3>
+               <p> Procesador AMD Ryzen 5</p>
+               <p>16GB RAM RGB</p>
+               <p>Tarjeta Grafica GTX 1650</p>
+               <p>1TB SSD</p>
+               <p>Monitor 22" + kit Perifericos RBG(teclado,Mouse,Headset,Pad)</p>
+               <h3>Gs. 5.800.000</h3>
+            <button>agregar al carrito</button>
+           </div>
+           <div class="card">
+               <img src="imagen/monitor1.jpeg">
+               <h3>Monitor Gamer Curvo 24 </h3>
+                <p>Resolucion Full HD</p>
+                <p>Tasa de refresco de 144Hz</p>
+                <p>Tecnologia AMD FreeSync</p>
+                <h3>Gs. 1.250.000</h3>
+                <button>agregar al carrito</button>
+           </div>
+           <div class="card">
+               <img src="imagen/notebook1.jpeg">
+               <h3>Notebook HP ProBook1 15.6 </h3>
+                <p>Procesador Intel Core i5 12va Gen</p>
+                <p>Memoria Ram de 8GB DDR4</p>
+                <p>Almacenamiento SSD 512GB NVMe</p>
+                <p>Sistema Operativo Windows 11 Home</p>
+                <h3>Gs. 4.350.000</h3>
+                <button>agregar al carrito</button>
+           </div>
+           <div class="card">
+               <img src="imagen/teclado1.jpeg">
+               <h3>Teclado Mecanico Corsair K63 Wireless </h3>
+               <p>Tecnologia Inalambrica de 1 ms y 2,4 GHz</p>
+               <p>Retroiluminacion azul dinamica por tecla</p>
+               <p>Interruptores mecanicos CHERRY MX Red</p>
+                <h3>Gs. 650.000</h3>
+                <button>agregar al carrito</button>
+           </div>
+           <div class="card">
+               <img src="imagen/gpu1.jpeg">
+               <h3>Tarjeta Grafica ASUS Dual GTX 1650 </h3>
+               <p>Memoria de video 4GB GDDR& de alta velocidad</p>
+               <p>Diseño cd doble ventilador para maxima refrigeracion</p>
+               <p>Arquitectura NVIDIA Turing con soporte sw fabrica</p>
+               <p>salidas de video estables HDMI</p>
+                <h3>Gs. 1.150.000</h3>
+                <button>agregar al carrito</button>
+           </div>
+           <div class="card">
+               <img src="imagen/teclado2.jpeg">
+               <h3>Combo Gamer Noganet Storm</h3>
+               <p>Teclado multimedia con retroalimentacion LED fija</p>
+               <p>Teclas reforzadas de membrana con respuesta tactil</p>
+               <p>Mouse optico ergonomico con selector de DPI</p>
+                <h3>Gs. 360.000</h3>
+                <button>agregar al carrito</button>
+           </div>
+           <div class="card">
+               <img src="imagen/procesador1.jpeg">
+               <h3>Procesador Intel Core i9-13900k</h3>
+               <p>Frecuencia maxima de tecnologia Intel Turbo Boost de 5.80 GHz</p>
+               <p>24 nucleos en total (8 nucleos de rendimiento y 16 eficientes)</p>
+               <p>32 hilos de procesamiento y memoria cache inteligente de 36 MB</p>
+                <h3>Gs. 370.000</h3>
+                <button>agregar al carrito</button>
+           </div>
+            <div class="card">
+               <img src="imagen/pc2.jpeg">
+               <h3>PC Gamer Kelfix Advanced v1 </h3>
+               <p>Procesador Intel Core i5 12va Generacion</p>
+               <p>Memoria Ram 16GB DDR4 RGB</p>
+               <p>Tarjeta Grafica NVIDIA GTX 1650 4GB GDDR6</p>
+               <p>Almacenamiento SSD 500GB NVme M.2/Cooler liquido</p>
+                <h3>Gs. 4.250.000</h3>
+                <button>agregar al carrito</button>
+           </div>
+       </div>
+
+        <div class="grid2">
+        <div class="card2">
+                <div class="combo-info">
+                    <h3>Super Setup Corsair iCUE Elite Custom Edition + Kit Perifericos Full RGB</h3>
+                    <div class="contenedor">
+                        <div class="columna">
+                        <p><b>Procesador:</b> AMD Ryzen 9 7950X3D(Hasta 5.7GHz)ideal para streaming y renderizado extremo</p>
+                        <p><b>Refrigeracion:</b>Liquida Corsair iCUE H150i ELITE LCD XT con pantalla IPS programable</p>
+                        <p><b>Memoria RAM:</b>32GB DDR5 Corsair Dominator Titanium RGB 6000MHz de ultra baja latencia</p>
+                        <p><b>Graficos:</b>NVIDIA GeForce RTX 4080 Super 16GB GDDR6X preparada para trazado de rayos en 4K</p>
+                        <p><b>Almacenamiento:</b>SSD 2TB kingston FURY REnegade PCIe 4.0 NVMe M.2(Velocidad hasta 7300MB/s)</p>
+
+                        </div>
+                        <div class="columna">
+                        <p><b>Teclado:</b>Mecanico RBG con interruptores</p>
+                        <p><b>Mouse:</b>Optico Gamer con switches de alta respuesta</p>
+                        <p><b>Audio:</b>Auriculares estereo Pro con MIcrofono integrado</p>
+                        <p><b>Monitor:</b>Gamer VIBOX 22" Full Slim</p>
+                        <p><b>Camara:</b>Webcam Ultra HD Pro con montaje Superior</p>
+                        <p><b>Gabinete</b>Corsair iCUE 5000x RGB Cristal templado con 6 ventiladores de levitacion magnetica</p>
+                        <p><b>Placa Madre:</b>ASUS ROG Strix X670E-E Gaming WiFi con soporte para tecnologias de nueva generacion</p>
+                        </div>
+                        
+                <img src="imagen/combo1.jpeg">
+
+                </div>
+                <h3 class="gs">Gs. 18.450.000</h3>
+                <button>agregar al carrito</button>
+    
+        </div>
+        </div>   
+    </main>
+
+    <footer>
+    <div class="footer-contenedor">
+        <div class="footer-columna">
+            <h2 class="footer-logo">KELFIX</h2>
+            <p><a href="#">Inicio</a> | <a href="https://goo.gl/maps/47MTz1dGqHjzLLUcA" target="_blank">Mapa del Sitio</a></p>
+            <div class="footer-columna">
+            <h4 class="footer-logo">Siguenos en</h4>
+        <div class="social">
+        <a href="https://www.facebook.com/share/1HD6Yeaen1/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        
+        <a href="https://www.instagram.com/kelfix_py?igsh=MThqandodGY2Ymx5ag==" target="_blank"><i class="fab fa-instagram"></i></a>
+        
+        
+        
+        <a href="https://www.tiktok.com/@kelfixpy?lang=es-419" target="_blank"><i class="fab fa-tiktok"></i></a>
+        </div>
+        </div>
+            <p class="copyright">© 2026 KELFIX Paraguay</p>
+        </div>
+
+        <div class="footer-columna contacto">
+            <h3>Contacto</h3>
+            <p>📍 Itaugua,Cordillera Py.</p>
+            <p>📍 Altos,Cordillera Py.</p>
+            <p>📞 +595 (983) 883 841</p>
+            <p>📞 +595 (986) 761 892</p>
+            <p>✉️ info@kelfixpy.com</p>
+        </div>
+
+        
+    </footer>
+
+    <!-- VENTANA MODAL DEL CARRITO -->
+<div id="cart-modal" class="modal-overlay">
+    <div class="modal-card">
+        <div class="modal-icon">
+            <i class="fa-solid fa-circle-check"></i>
+        </div>
+        <h2>¡Agregado con éxito!</h2>
+        <p>El producto ha sido añadido correctamente a tu carrito de compras de Kelfix.</p>
+        
+        <hr class="modal-divider">
+        
+        <button id="close-modal-btn" class="btn-modal-close">Continuar Comprando</button>
+    </div>
+</div>
+    <script src="js/script1.js"></script>
+    <script src="js/theme.js"></script>
+</body>
+</html>

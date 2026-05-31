@@ -1,0 +1,116 @@
+:root {
+    --bg-principal: #0d0f12;
+    --bg-tarjetas: #16191e;
+    --color-rojo: #e63946;
+    --color-rojo-hover: #ff4d5a;
+    --texto-blanco: #ffffff;
+    --texto-secundario: #94a3b8;
+    --borde-sutil: #242930;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    background-color: var(--bg-principal);
+    color: var(--texto-blanco);
+    line-height: 1.8;
+    padding-bottom: 60px;
+}
+.btn-volver {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: var(--bg-tarjetas);
+    color: var(--texto-blanco);
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: 1px solid var(--borde-sutil);
+    transition: all 0.3s ease;
+    z-index: 100;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+.btn-volver:hover {
+    border-color: var(--color-rojo);
+    box-shadow: 0 0 12px rgba(230, 57, 70, 0.3);
+    color: var(--color-rojo);
+}
+.articulo-container {
+    max-width: 800px;
+    margin: 100px auto 40px auto;
+    padding: 0 20px;
+}
+.meta-info {
+    font-size: 0.9rem;
+    color: var(--color-rojo);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background: var(--borde-sutil);
+    margin: 30px 0;
+}
+.contenido-html p {
+    margin-bottom: 25px;
+    color: #cbd5e1;
+    font-size: 1.1rem;
+}
+.contenido-html h2 {
+    font-size: 1.8rem;
+    color: var(--texto-blanco);
+    margin: 40px 0 20px 0;
+    font-weight: 700;
+}
+.caja-destacada {
+    background-color: var(--bg-tarjetas);
+    border-left: 4px solid var(--color-rojo);
+    padding: 20px;
+    border-radius: 0 12px 12px 0;
+    margin: 30px 0;
+}
+.caja-destacada h4 {
+    color: var(--color-rojo);
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+.caja-destacada p {
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-style: italic;
+}
+.contenido-html ol, .contenido-html ul {
+    margin-left: 20px;
+    margin-bottom: 30px;
+    color: #cbd5e1;
+}
+.contenido-html li {
+    margin-bottom: 12px;
+    font-size: 1.05rem;
+}
+.contenido-html strong {
+    color: var(--texto-blanco);
+}
+footer {
+    text-align: center;
+    margin-top: 80px;
+    color: var(--texto-secundario);
+    font-size: 0.85rem;
+}
